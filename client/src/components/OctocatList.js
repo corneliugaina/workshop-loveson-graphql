@@ -10,6 +10,7 @@ const getOctocatQuery = gql`
             nom
             prenom 
             linkedIn
+            gitHub
         }
     }
 `
@@ -27,7 +28,7 @@ class OctocatList extends Component {
                             {data.octocats && data.octocats.map(octocat => (
                                 //assignation dune clef pour chaque octocat
                                 <li key={`octocat${octocat.id}`}>
-                                    {octocat.id} : {octocat.prenom} {octocat.nom}, GitHub: {octocat.gitHub}
+                                    {octocat.id} : {octocat.prenom} {octocat.nom}, <span className="github">GitHub:</span> {octocat.gitHub}
                                 </li>
                             ))}
                         </ul>

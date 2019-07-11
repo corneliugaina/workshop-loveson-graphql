@@ -13,6 +13,6 @@ app.use('/graphql',graphqlHTTP({
 }))
 
 
-app.listen(4004, () => { // 3. une fois installé nodemon, va "ecouter les changements" in browser: http://localhost:4000/graphql 
-    console.log('now listening for request on port 4004');
+app.listen(4055, () => { // 3. une fois installé nodemon, va "ecouter les changements" in browser: http://localhost:4000/graphql 
+    console.log('now listening for request on port 4055');
 }) 
